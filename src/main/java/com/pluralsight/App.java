@@ -27,6 +27,7 @@ public class App {
             }
         }
 
+
         // 3. Create a list of just names
         System.out.println("\n=== Character Names ===");
         ArrayList<String> names = new ArrayList<String>();
