@@ -14,10 +14,12 @@ public class App {
         // 1. Print names in UPPERCASE using map and forEach
 
 
-        // 2. Filter characters with mass > 80 using .filter and loop over and display filtered
+        // 2. Filter characters with mass > 80 using .filter and .collect(Collectors.toList())
+        // store the results in a variable called heavyCharacters and display the new list
 
 
-        // 3. Create a list of just character names using .filter display the new list with a loop
+        // 3. Create a new list of just character names using .filter and .collect(Collectors.toList())
+        // the new list should be called names. Display the new list with a loop
 
 
         // 4. Use anyMatch to check for blue eyes and let us know if any character has blue eyes
