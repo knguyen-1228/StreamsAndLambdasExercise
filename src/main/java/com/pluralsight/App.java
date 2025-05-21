@@ -11,66 +11,23 @@ public class App {
         characters.add(new Character("Leia Organa", 150, 49, "brown", "female"));
         characters.add(new Character("Anakin Skywalker", 188, 84, "blue", "male"));
 
-        // 1. Print names in all uppercase
-        System.out.println("=== Names in UPPERCASE ===");
-        for (Character c : characters) {
-            System.out.println(c.getName().toUpperCase());
-        }
+        // 1. Print names in UPPERCASE using map and forEach
 
-        // 2. Filter characters with mass > 80
-        System.out.println("\n=== Characters with Mass > 80 ===");
-        ArrayList<Character> filtered = new ArrayList<Character>();
-        for (Character c : characters) {
-            if (c.getMass() > 80) {
-                filtered.add(c);
-                System.out.println(c.getName() + " (" + c.getMass() + ")");
-            }
-        }
 
-        // 3. Create a list of just names
-        System.out.println("\n=== Character Names ===");
-        ArrayList<String> names = new ArrayList<String>();
-        for (Character c : characters) {
-            names.add(c.getName());
-        }
-        for (String name : names) {
-            System.out.println(name);
-        }
+        // 2. Filter characters with mass > 80 using .filter and loop over and display filtered
 
-        // 4. Check if any character has blue eyes
-        boolean hasBlueEyes = false;
-        for (Character c : characters) {
-            if (c.getEyeColor().equalsIgnoreCase("blue")) {
-                hasBlueEyes = true;
-                break;
-            }
-        }
-        if (hasBlueEyes) {
-            System.out.println("\nSome characters have blue eyes");
-        } else {
-            System.out.println("\nNo characters have blue eyes");
-        }
 
-        // 5. Check if all characters are male
-        boolean allMale = true;
-        for (Character c : characters) {
-            if (!c.getGender().equalsIgnoreCase("male")) {
-                allMale = false;
-                break;
-            }
-        }
-        if (allMale) {
-            System.out.println("All the characters are male");
-        } else {
-            System.out.println("Not all characters are male");
-        }
+        // 3. Create a list of just character names using .filter display the new list with a loop
 
-        // 6. Calculate total mass
-        int totalMass = 0;
-        for (Character c : characters) {
-            totalMass += c.getMass();
-        }
-        System.out.println("Total mass: " + totalMass);
+
+        // 4. Use anyMatch to check for blue eyes and let us know if any character has blue eyes
+
+
+        // 5. Use allMatch to check if all are male and let us know if all characters are male
+
+
+        // 6. Use .mapToInt and .sum to calculate total mass of all characters and then display the total mass
+
     }
 
 
